@@ -14,19 +14,20 @@
 </head>
 
 <body>
+    <?php require_once 'process.php'; ?>
     <div class="container">
     <div class="row justify-content-center">
-        <form action="" method="post">
+        <form action="process.php" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" value="Enter Name" class="form-control">
+                <input type="text" name="name" value="" class="form-control">
             </div>
             <div class="form-group">
                 <label for="address">Address</label>
-                <input type="text" name="Address" value="Enter Address" class="form-control">
+                <input type="text" name="address" value="" class="form-control">
             </div>
             <div class="form-group">
-                <input type="button" value="Submit Data " class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" name="save">SAVE</button>
             </div>
         </form>
     </div>
